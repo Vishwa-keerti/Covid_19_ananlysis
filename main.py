@@ -26,9 +26,6 @@ flights.columns = flights.columns.str.strip()
 # 📌 3. What is the average arrival delay per airline?
 
 # merged = pd.merge(flights , airlines , left_on = 'AIRLINE' , right_on = 'IATA_CODE' , how = 'left' , suffixes=('_flights' , '_airlines'))
-# # print(merged.columns)
-# # print(merged['ARRIVAL_DELAY'].dtype)
-# # print(merged['ARRIVAL_DELAY'].isna().sum())
 # avg_arvl_delay = merged.groupby('AIRLINE_airlines')['ARRIVAL_DELAY'].mean().reset_index()
 # avg_arvl_delay.columns = ['Airline' , 'Avg_ar_delay']
 # print(avg_arvl_delay)
